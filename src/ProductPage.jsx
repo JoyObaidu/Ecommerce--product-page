@@ -103,11 +103,11 @@ const [showBox, setShowBox] = useState(false)
           <img
             src={data[currentIndex].mainImage}
             alt="main product"
-            className="w-full md:w-md"
+            className="w-sm md:w-md"
           />
 
           {/* Prev/Next buttons on mobile */}
-          <div className="flex justify-between items-center w-full absolute top-1/2 transform -translate-y-1/2 px-4 lg:hidden">
+          <div className="flex justify-between items-center w-sm md:w-md absolute top-1/2 transform -translate-y-1/2 px-4 lg:hidden">
             <button aria-label="Previous image" 
               onClick={handlePrevious}
               className="bg-white rounded-2xl p-2"
@@ -187,7 +187,7 @@ const [showBox, setShowBox] = useState(false)
       </section>
 
  {showCart && (
-      <div className='absolute w-80 h-60 transition-opacity duration-300 rounded-2xl p-2 bg-white shadow-2xl top-1/12 left-8/12'>
+      <div className='absolute w-72 h-50 lg:w-80 lg:h-60 transition-opacity duration-300 rounded-2xl p-2 bg-white shadow-2xl top-1/12 lg:left-8/12'>
         <h2 className="font-bold p-2 border-b align-top mb-5">Cart</h2>
        {/* Empty cart */}
        {quantity <= 0 && (
